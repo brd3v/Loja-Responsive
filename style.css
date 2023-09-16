@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (orientation: landscape){
+    .sobre-a-loja{ 
+    width: 100%;
+    display: grid
+
+    
+    }
+    
+    .sobre-a-loja img{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .sobre-a-loja p{
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+    
+    }
+body{
+    width: 100%;
+}
+
+header{
+    color: #fff;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+
+section{
+    padding: 1rem 5rem;
+
+}
+
+nav{
+    display: flex;
+}
+nav ul {
+     margin-right: 1rem;
+}
+li{
+    list-style: none
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sobre-a-loja{
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-a-loja div{
+    width: 500px;
+}
+
+.sobre-a-loja p {
+    margin-top: 2rem;
+}
+.sobre-a-loja img{
+    width: 400px;
+    height: 400px;
+}
+.sobre-a-loja h2{
+    color: blue;
+}
+hr{
+    background-color: blue;
+    height: 3px;
+    margin-top: 1.5rem;
+}
+
+.produtos img{
+    height: 200px;
+}
+
+.produtos div{
+    width: 100%;
+   
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.produtos h2{
+    color: blue;
+
+}
+
+.produtos div div{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.produtos h2 p {
+ margin-top: .5rem;
+}
+
+button{
+    margin-top: .5rem;
+    color: #fff;
+    background-color: blue;
+    border-radius: .3rem;
+    cursor: pointer;
+    width: auto;
+    border: none;
+    padding: 1rem 1rem;
+}
+
+
+@media (max-width:640px) {
+    header{
+        margin: 0;
+    }
+body{
+    width: 100%;
+
+}
+
+header{
+    width: 100%;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+}
+section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-a-loja div {
+    width: 100%;
+}
+.sobre-a-loja{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.sobre-a-loja img{
+    width: 100%;
+}
+.sobre-a-loja h2{
+    margin-top: 1rem;
+}
+.produtos{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.produtos div{
+    display: flex;
+    flex-direction: column;
+}
+.produtos div div{
+    margin-top: 2rem ;
+
+
+}
+}
+
+@media(min-width: 641px) and (max-width: 1024px){
+.sobre-a-loja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.produtos div{
+    display: grid;
+ 
+}
+
+.produtos div .one{
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.produtos div .two{
+
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+}
+
+
